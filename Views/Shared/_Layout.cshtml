@@ -248,7 +248,7 @@
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header bg-light-blue">
-                                <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                                <img src="../img/avatar3.png" class="img-circle" alt="User Image" />
                                 <p>
                                     Lucas Martins - Sistemas de Informação
                                     <small>Ingressou em 23/02/2017</small>
@@ -279,7 +279,7 @@
                 <!-- Sidebar user panel -->
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="img/avatar3.png" class="img-circle" alt="User Image" />
+                        <img src="../img/avatar3.png" class="img-circle" alt="User Image" />
                     </div>
                     <div class="pull-left info">
                         <p>Olá, Estudante</p>
@@ -288,16 +288,26 @@
                     </div>
                 </div>
                 <!-- search form -->
-                <form action="#" method="get" class="sidebar-form">
+                @using (Html.BeginForm("Index", "Alunos", FormMethod.Get, new { @class = "form-inline sidebar-form" }))
+                {
+                    @*<input type="text" placeholder="Buscar um aluno" name="busca" class="form-control" />
+            <input type="submit" class="btn btn-default" value="Buscar" />*@
+
                     <div class="input-group">
-                        <input type="text" name="q" class="form-control" placeholder="Search..." />
+                        <input type="text" name="busca" class="form-control" placeholder="Buscar um aluno" />
                         <span class="input-group-btn">
-                            <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            <button type='submit' value="Buscar" id='search-btn' class="btn btn-default">
+                                <i class="fa fa-search"></i>
+                            </button>
                         </span>
                     </div>
-                </form>
+                }
+
                 <!-- /.search form -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
+              
+                    
+               
                 <ul class="sidebar-menu">
                     @foreach (var item in actionlist)
                     {
@@ -309,9 +319,10 @@
                             </a>
                         </li>
                     }
-                    
+
 
                 </ul>
+
             </section>
             <!-- /.sidebar -->
         </aside>
@@ -332,6 +343,8 @@
 
             <!-- Main content -->
             <section class="content">
+
+               
 
                 @RenderBody()
 
