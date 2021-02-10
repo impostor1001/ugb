@@ -8,23 +8,56 @@ namespace Ugb
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            //            "~/Scripts/jquery-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/script").Include(
+                       "~/Scripts/jquery.min.js",
+                       "~/Scripts/jquery-ui-1.10.3.min.js",
+                       "~/Scripts/bootstrap.min.js",
+                       "~/Scripts/raphael-min.js",
+                       "~/Scripts/plugins/morris/morris.min.js",
+                       "~/Scripts/plugins/sparkline/jquery.sparkline.min.js",
+                       "~/Scripts/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
+                       "~/Scripts/plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
+                       "~/Scripts/plugins/fullcalendar/fullcalendar.min.js",
+                       "~/Scripts/plugins/jqueryKnob/jquery.knob.js",
+                       "~/Scripts/plugins/daterangepicker/daterangepicker.js",
+                       "~/Scripts/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js",
+                       "~/Scripts/plugins/iCheck/icheck.min.js",
+                       "~/Scripts/AdminLTE/app.js",
+                       "~/Scripts/AdminLTE/dashboard.js"));
+
+
+
+
+            //bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+            //            "~/Scripts/jquery.validate*"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+            //            "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+            //          "~/Scripts/bootstrap.js"));
+
+            //bundles.Add(new StyleBundle("~/Content/css").Include(
+            //          "~/Content/bootstrap.css",
+            //          "~/Content/site.css"));
+
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                     "~/Content/bootstrap.min.css",
+                     "~/Content/font-awesome.min.css",
+                     "~/Content/ionicons.min.css",
+                     "~/Content/morris/morris.css",
+                     "~/Content/jvectormap/jquery-jvectormap-1.2.2.css",
+                     "~/Content/fullcalendar/fullcalendar.css",
+                     "~/Content/daterangepicker/daterangepicker-bs3.css",
+                     "~/Content/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css",
+                     "~/Content/AdminLTE.css"));
         }
     }
 }

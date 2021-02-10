@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\App_Start",
     "\\Controllers",
-    "\\Models"
+    "\\Models",
+    "\\Scripts",
+    "\\Views",
+    "\\Views\\Shared"
   ],
   "PreviewInSolutionExplorer": false
 }
