@@ -1,7 +1,7 @@
 ﻿@model Ugb.Models.Aluno
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Deletar";
 }
 
 
@@ -91,14 +91,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Dashboard
-            <small>Control panel</small>
+            @ViewBag.Title
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
-        </ol>
     </section>
+
 
     <!-- Main content -->
     <section class="content">
@@ -148,7 +144,7 @@
                                 @Html.AntiForgeryToken()
 
                                 <div class="form-actions">
-                                    <button type="submit" value="Delete" class="btn btn-danger btn-block" >
+                                    <button type="submit" value="Delete" class="btn btn-danger btn-block">
                                         Excluir
                                         <i class="glyphicon glyphicon-trash fa-2x"></i>
                                     </button>

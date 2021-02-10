@@ -1,7 +1,7 @@
 ﻿@model Ugb.Models.Aluno
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalhes";
 }
 
 <style>
@@ -89,16 +89,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Dashboard
-            <small>Control panel</small>
+            @ViewBag.Title
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Dashboard</li>
-        </ol>
     </section>
 
-        <!-- Main content -->
+
+    <!-- Main content -->
     <section class="content">
         <div class="row">
             <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
@@ -106,7 +102,7 @@
                     <div class="col-sm-12">
                         <div class="col-xs-12 col-sm-8">
                             <h2>@Html.DisplayFor(model => model.Name)</h2>
-                            
+
                             <p><strong> @Html.DisplayNameFor(model => model.StudentRegistration): </strong>  @Html.DisplayFor(model => model.StudentRegistration). </p>
                             <p><strong> @Html.DisplayNameFor(model => model.Street): </strong>  @Html.DisplayFor(model => model.Street). </p>
                             <p><strong> @Html.DisplayNameFor(model => model.State): </strong>  @Html.DisplayFor(model => model.State). </p>
@@ -125,7 +121,7 @@
                         <div class="col-xs-12 col-sm-4 text-center">
                             <figure>
                                 <img src="../../img/avatar3.png" alt="" class="img-circle img-responsive">
-                                
+
                             </figure>
                         </div>
                     </div>
@@ -135,12 +131,12 @@
                                 Editar
                                 <i class="glyphicon glyphicon-edit fa-2x"></i>
                             </a>
-                         
+
 
 
                         </div>
                         <div class="col-xs-12 col-sm-6 text-center ">
-                            
+
                             <a href='@Url.Action("Index", "Alunos", new { id = Model.PersonId })' class="btn btn-info btn-block">
                                 Voltar
                                 <i class="glyphicon glyphicon-step-backward fa-2x"></i>
@@ -154,7 +150,7 @@
             </div>
         </div>
     </section>
-       <!-- /.content -->
+    <!-- /.content -->
 </aside><!-- /.right-side -->
 
 

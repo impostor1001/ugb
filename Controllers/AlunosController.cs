@@ -17,6 +17,7 @@ namespace Ugb.Controllers
         // GET: Alunos
         public ActionResult Index(string busca = null)
         {
+           
             // var alunos = db.Alunos.Where(n => n.Name.Contains(texto) || n.StudentRegistration.Contains(texto));
             if (busca != null)
                 return View(db.Alunos.Where(a => a.Name.ToUpper().Contains(busca.ToUpper()) || a.StudentRegistration.Contains(busca) ).ToList());
@@ -26,6 +27,7 @@ namespace Ugb.Controllers
         // GET: Alunos/Details/5
         public ActionResult Details(int? id)
         {
+            
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
