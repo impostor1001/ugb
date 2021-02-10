@@ -35,7 +35,7 @@ namespace Ugb.Models
         public string State { get; set; }
 
         [Required]
-        [Display(Name = "StatCellphonee")]
+        [Display(Name = "Celular")]
         public string StatCellphonee { get; set; }
 
         [Display(Name = "Telefone")]

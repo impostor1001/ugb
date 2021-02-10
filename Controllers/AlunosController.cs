@@ -115,6 +115,13 @@ namespace Ugb.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpPost, ActionName("Index")]
+        public ActionResult Buscar(string texto)
+        {
+            var alunos = db.Alunos.Where(n => n.Name.Contains(texto) || n.StudentRegistration.Contains(texto));
+            return View(alunos);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -123,5 +130,6 @@ namespace Ugb.Controllers
             }
             base.Dispose(disposing);
         }
+
     }
 }
