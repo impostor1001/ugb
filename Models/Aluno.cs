@@ -11,18 +11,18 @@ namespace Ugb.Models
     public class Aluno
     {
         [Key]
-        public int PersonId;
+        public int PersonId { get; set; }
 
-        [Display(Name = "Nome")]
         [Required]
+        [Display(Name = "Nome")]
         public string Name { get; set; }
 
-        [Display(Name = "Curso")]
         [Required]
+        [Display(Name = "Curso")]
         public string Course { get; set; }
 
-        [Display(Name = "Matricula")]
         [Required]
+        [Display(Name = "Matricula")]
         public string StudentRegistration { get; set; }
     
         [Display(Name = "Rua")]
@@ -34,8 +34,8 @@ namespace Ugb.Models
         [Display(Name = "Estado")]
         public string State { get; set; }
 
-        [Display(Name = "Telefone")]
         [Required]
+        [Display(Name = "StatCellphonee")]
         public string StatCellphonee { get; set; }
 
         [Display(Name = "Telefone")]

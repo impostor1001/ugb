@@ -73,8 +73,8 @@ C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\bin\System.Web.WebPages.Razor.xml
 C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\bin\Newtonsoft.Json.xml
 C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\bin\Antlr3.Runtime.pdb
 C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\obj\Debug\Ugb.csprojAssemblyReference.cache
 C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\obj\Debug\Ugb.csproj.CoreCompileInputs.cache
 C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\obj\Debug\Ugb.csproj.CopyComplete
 C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\obj\Debug\Ugb.dll
 C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\obj\Debug\Ugb.pdb
+C:\Users\Lucas\Desktop\UGB\Ugb\Ugb\obj\Debug\Ugb.csprojAssemblyReference.cache
