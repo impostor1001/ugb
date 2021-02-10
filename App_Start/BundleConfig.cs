@@ -11,24 +11,16 @@ namespace Ugb
             //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
             //            "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                       "~/Scripts/jquery.min.js",
+                        "~/Scripts/jquery-ui-1.10.3.min.js"
+                       ));
 
             bundles.Add(new ScriptBundle("~/bundles/script").Include(
-                       "~/Scripts/jquery.min.js",
-                       "~/Scripts/jquery-ui-1.10.3.min.js",
                        "~/Scripts/bootstrap.min.js",
                        "~/Scripts/raphael-min.js",
-                       "~/Scripts/plugins/morris/morris.min.js",
-                       "~/Scripts/plugins/sparkline/jquery.sparkline.min.js",
-                       "~/Scripts/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js",
-                       "~/Scripts/plugins/jvectormap/jquery-jvectormap-world-mill-en.js",
-                       "~/Scripts/plugins/fullcalendar/fullcalendar.min.js",
-                       "~/Scripts/plugins/jqueryKnob/jquery.knob.js",
-                       "~/Scripts/plugins/daterangepicker/daterangepicker.js",
-                       "~/Scripts/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js",
-                       "~/Scripts/plugins/iCheck/icheck.min.js",
                        "~/Scripts/AdminLTE/app.js",
                        "~/Scripts/AdminLTE/dashboard.js"));
-
 
 
 
