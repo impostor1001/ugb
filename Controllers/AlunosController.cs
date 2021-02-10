@@ -15,8 +15,11 @@ namespace Ugb.Controllers
         private UgbContext db = new UgbContext();
 
         // GET: Alunos
-        public ActionResult Index()
+        public ActionResult Index(string busca = null)
         {
+            // var alunos = db.Alunos.Where(n => n.Name.Contains(texto) || n.StudentRegistration.Contains(texto));
+            if (busca != null)
+                return View(db.Alunos.Where(a => a.Name.ToUpper().Contains(busca.ToUpper()) || a.StudentRegistration.Contains(busca) ).ToList());
             return View(db.Alunos.ToList());
         }
 
@@ -115,12 +118,6 @@ namespace Ugb.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpPost, ActionName("Index")]
-        public ActionResult Buscar(string texto)
-        {
-            var alunos = db.Alunos.Where(n => n.Name.Contains(texto) || n.StudentRegistration.Contains(texto));
-            return View(alunos);
-        }
 
         protected override void Dispose(bool disposing)
         {
