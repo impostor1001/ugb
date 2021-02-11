@@ -322,6 +322,7 @@
     <Content Include="Img\avatar2.png" />
     <Content Include="Img\avatar3.png" />
     <Content Include="Img\avatar5.png" />
+    <Content Include="Img\bgSimpleLinesInv.jpg" />
     <Content Include="Img\blur-background04.jpg" />
     <Content Include="Img\blur-background08.jpg" />
     <Content Include="Img\blur-background09.jpg" />
@@ -338,8 +339,10 @@
     <Content Include="Img\credit\paypal2.png" />
     <Content Include="Img\credit\visa.png" />
     <Content Include="Img\icons.png" />
+    <Content Include="Img\logoUGBMini.png" />
     <Content Include="Img\sprite-skin-flat.png" />
     <Content Include="Img\sprite-skin-nice.png" />
+    <Content Include="Img\ugblogo.png" />
     <Content Include="Img\user-bg.png" />
     <Content Include="Img\user.jpg" />
     <Content Include="Img\user2.jpg" />

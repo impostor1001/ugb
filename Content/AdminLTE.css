@@ -16,8 +16,9 @@ body {
     overflow-x: hidden !important;
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
-    min-height: 100%;
+    height: 100%;
     background: #f9f9f9;
+    background-image: url(../img/bgSimpleLinesInv.jpg);
 }
 
 a {
@@ -45,6 +46,7 @@ a {
     .wrapper:after {
         clear: both;
     }
+
 /* Header */
 body > .header {
     position: absolute;
@@ -61,7 +63,7 @@ body > .header {
 }
 /*right side - contins main content*/
 .right-side {
-    background-color: #f9f9f9;
+
     margin-left: 220px;
 }
 /*left side - contains sidebar*/
@@ -121,7 +123,7 @@ body.fixed .wrapper {
 /* Content */
 .content {
     padding: 20px 15px;
-    background: #f9f9f9;
+   
 }
 /* Utility */
 /* H1 - H6 font */
@@ -178,6 +180,7 @@ img {
 .bg-yellow,
 .bg-aqua,
 .bg-blue,
+.bg-blue-gradient,
 .bg-light-blue,
 .bg-green,
 .bg-navy,
@@ -216,6 +219,11 @@ img {
     background-color: #0073b7 !important;
 }
 
+.bg-blue-gradient {
+    background-color: #3c8dbc !important;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0073b7), color-stop(1, #0089db)) !important;
+}
+
 .bg-light-blue {
     background-color: #3c8dbc !important;
 }
@@ -249,7 +257,7 @@ img {
 }
 
 .bg-purple {
-    background-color: #932ab6 !important;
+    background-color: #605ca8 !important
 }
 
 .bg-maroon {
@@ -466,7 +474,11 @@ body > .header {
 
 .right-side > .content-header {
     position: relative;
-    padding: 15px 15px 10px 20px;
+    padding: 8px 15px;
+    margin: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
 }
 
     .right-side > .content-header > h1 {
