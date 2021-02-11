@@ -18,7 +18,6 @@ namespace Ugb.Controllers
         public ActionResult Index(string busca = null)
         {
            
-            // var alunos = db.Alunos.Where(n => n.Name.Contains(texto) || n.StudentRegistration.Contains(texto));
             if (busca != null)
                 return View(db.Alunos.Where(a => a.Name.ToUpper().Contains(busca.ToUpper()) || a.StudentRegistration.Contains(busca) ).ToList());
             return View(db.Alunos.ToList());
